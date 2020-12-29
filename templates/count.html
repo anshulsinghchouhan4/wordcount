@@ -1,0 +1,17 @@
+<html>
+<body>
+<style>
+h1 {
+  text-align: center;
+}
+</style>
+<h1> COUNT WORD </h1>
+<center> <a href = {% url 'home' %}> Start Again </a> </center>
+<h2> Input having {{ total }} words.</h2>
+<h2> Words are: </h2>
+{% for i,j in sortedlist %}
+{{i}} - {{j}} 
+<!-- <br> </br> -->
+{% endfor %}
+</body>
+</html>
